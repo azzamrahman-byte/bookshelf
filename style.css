@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#incompleteBookList,
+#completeBookList {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner {
+    flex-grow: 1;
+}
+
+button[data-testid="bookItemIsCompleteButton"],
+button[data-testid="bookItemDeleteButton"],
+button[data-testid="bookItemEditButton"] {
+    margin-left: 10px;
+}
+
+button[data-testid="bookItemIsCompleteButton"] {
+    background-color: #2196F3;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+    background-color: #f44336;
+}
+
+button[data-testid="bookItemEditButton"] {
+    background-color: #FFC107;
+}
+
+button[data-testid="bookItemIsCompleteButton"]:hover {
+    background-color: #1976D2;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+    background-color: #d32f2f;
+}
+
+button[data-testid="bookItemEditButton"]:hover {
+    background-color: #FFA000;
+}
