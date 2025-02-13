@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         const container = document.createElement('div');
         container.setAttribute('data-testid', 'bookItem');
-        container.setAttribute('data-bookid', id);
+        container.setAttribute('data-bookid', 'id');
         container.append(kontainerTeks);
 
         if (objectBuku.isCompleted) {
